@@ -33,7 +33,7 @@ export const TotalRevenueOptions: ApexOptions = {
     show: false,
   },
   stroke: {
-    colors: ["transparent"],
+    colors: ["text.primary"],
     width: 4,
   },
   xaxis: {

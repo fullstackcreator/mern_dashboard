@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <Box>
-      <Typography fontSize={25} fontWeight={700} color="#a9aaba">
+      <Typography fontSize={25} fontWeight={700} color="text.primary">
         Dashboard
       </Typography>
 
@@ -38,25 +38,25 @@ const Home = () => {
           title="Properties for Sale"
           value={664}
           series={[75, 25]}
-          colors={["#275be8", "#c4e8ef"]}
+          colors={["#275be8", "#F4F4F4"]}
         />
         <PieChart
           title="Properties for Rent"
           value={550}
           series={[60, 40]}
-          colors={["#275be8", "#c4e8ef"]}
+          colors={["#FD8539", "#F4F4F4"]}
         />
         <PieChart
           title="Total Customers"
           value={5684}
           series={[75, 25]}
-          colors={["#275be8", "#c4e8ef"]}
+          colors={["#2ED480", "#F4F4F4"]}
         />
         <PieChart
-          title="Properties for Cities"
+          title="Total City"
           value={550}
           series={[75, 25]}
-          colors={["#275be8", "#c4e8ef"]}
+          colors={["#FE6D8E", "#F4F4F4"]}
         />
       </Box>
 
@@ -73,16 +73,17 @@ const Home = () => {
         flex={1}
         borderRadius="15px"
         padding="20px"
-        bgcolor="#292929"
+        bgcolor="background.paper"
         display="flex"
+        flexWrap="wrap"
         flexDirection="column"
         minWidth="100%"
         mt="25px"
       >
-        <Typography fontSize="18px" fontWeight={600} color="#a9aab8">
+        <Typography fontSize="18px" fontWeight={600} color="text.primary">
           Latest Properties
         </Typography>
-        <Box mt={2.5} sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+        <Box mt={2.5} sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
           {latestProperties.map((property) => (
             <PropertyCard
               key={property._id}

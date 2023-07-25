@@ -324,16 +324,16 @@ const App = () => {
               show: AgentProfile,
               icon: <PeopleAltOutlined />,
             },
-            {
-              name: "review", // LINK
-              list: Home,
-              icon: <StarOutlineRounded />,
-            },
-            {
-              name: "message", // LINK
-              list: Home,
-              icon: <ChatBubbleOutline />,
-            },
+//            {
+//              name: "review", // LINK
+//              list: Home,
+//              icon: <StarOutlineRounded />,
+//            },
+//            {
+//              name: "message", // LINK
+//              list: Home,
+//              icon: <ChatBubbleOutline />,
+//            },
             {
               name: "my-profile", // LINK
               options: { label: "My Profile" },

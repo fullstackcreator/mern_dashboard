@@ -362,7 +362,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               width: 256,
-              bgcolor: "#fcfcfc",
+              bgcolor: "#background.paper",
             },
           }}
         >
@@ -385,7 +385,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { xs: "none", md: "block" },
             "& .MuiDrawer-paper": {
               width: drawerWidth,
-              bgcolor: "#303030",
+              bgcolor: "background.paper",
               overflow: "hidden",
               transition: "width 200ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
             },
